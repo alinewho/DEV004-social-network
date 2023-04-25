@@ -9,6 +9,16 @@
   display:block;
   /* margin-bottom: 0px; */
 }
+.imageLogo::before {
+  content: ""; 
+  background-image: url(Imagenes/Cáo_logo_Welcome_white.png);
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: 30px;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;  
+  }
 body {
   background-image: url(Imagenes/trasnp.jpg);
   background-position: center center;
