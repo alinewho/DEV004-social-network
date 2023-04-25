@@ -8,7 +8,7 @@ export const login = () => {
   <div class="containerlogin">
   <section id="sectionOfLogin">
     <div id="logoContainer">
-      <img class="imageLogo" src="${logo}" alt="logocactus"> <br>
+      <img class="imageLogo" src="${logo}" alt="logocactusLogin"> <br>
     </div>
     <form id="loginForm">
       <div id="loginDiv">
@@ -65,8 +65,8 @@ export const login = () => {
         }
       });
   });
-  // const post = document.getElementById('post');
-  // post.innerHTML = `
-  // `;
+  const post = document.getElementById('post');
+  post.innerHTML = `
+   `;
   return root;
 };
