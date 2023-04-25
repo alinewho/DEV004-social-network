@@ -4,6 +4,7 @@ import {
 import { signOutUser, coleccPublic, qOrdered } from '../lib/firebaseFunctions';
 import { auth, db } from '../firebase/firebaseConfig';
 import logoBanner from '../Imagenes/cáo_navbarwhite.png';
+import user from '../Imagenes/usersinfondo.png';
 
 const userData = () => {
   const user = auth.currentUser;
@@ -59,7 +60,7 @@ export const posts = () => {
       <div id="historyOfPosts" class="historyOfPosts">
         <div class="informationOfUser" id="${post.id}">
               <div class="user-post">
-                <img src="./Imagenes/usersinfondo.png" class="inLine">
+                <img src="${user}" class="inLine">
                 <div class="post-informacion">
                   <h3>${post.data().autor}</h3>
                   <h6>${post.data().creacion}</h6>
