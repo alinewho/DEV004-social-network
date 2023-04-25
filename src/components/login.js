@@ -1,5 +1,6 @@
 import { signInWithEmail } from '../lib/firebaseFunctions.js';
 import { onNavigate } from '../router/index.js';
+import logo from '../Imagenes/Cáo_logo_Welcome_white.png';
 
 export const login = () => {
   const root = document.getElementById('root');
@@ -7,7 +8,7 @@ export const login = () => {
   <div class="containerlogin">
   <section id="sectionOfLogin">
     <div id="logoContainer">
-      <img class="imageLogo" alt="logocactus"> <br>
+      <img class="imageLogo" src="${logo}" alt="logocactus"> <br>
     </div>
     <form id="loginForm">
       <div id="loginDiv">

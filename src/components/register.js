@@ -1,5 +1,6 @@
 import { createUserWithPassword } from '../lib/firebaseFunctions.js';
 import { onNavigate } from '../router/index.js';
+import logo from '../Imagenes/Cáo_logo_Welcome_white.png';
 
 // const nameInput = document.getElementById('nameInput');
 // const lastnameInput = document.getElementById('lastnameInput');
@@ -10,7 +11,7 @@ export const register = () => {
     <section id="sectionOfContentRegister" class="button-container"> 
 
       <div id="logo" class="logo-container">
-      <img class="imageLogo" src="./Imagenes/Cáo_logo_Welcome_white.png" alt="logocactus"> <br> 
+      <img class="imageLogo" src="${logo}" alt="logocactusRA"> <br> 
       </div>
       <p id="statusText"></p>
 
@@ -48,7 +49,7 @@ export const register = () => {
   // para cuando se caegue el dom, y aqui dentro traeremos datos de firestore
     window.addEventListener('DOMContentLoaded', () => {
       saveUsers(nameInput.value, lastnameInput.value);
-      console.log('aqui quiero poder guardar nombre y apellido' + saveUsers())
+      console.log(`aqui quiero poder guardar nombre y apellido${saveUsers()}`);
     });
     try {
       const userCreated = await createUserWithPassword(emailInput.value, passwordInput.value);
